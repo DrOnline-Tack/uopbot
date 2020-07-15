@@ -89,7 +89,7 @@ module.exports = {
         gen3: function(room, user, args) {
             if (!canMakeTour(room, user)) return;
             checkGenerator(room, 'gen3nu', args, '[Gen 3] NFE');
-            room.send('/tour rules Not Fully Evolved, -Abra, -Diglett, -Dragonair, -Golbat, -Haunter, -Metang, -Vigoroth, -Light Ball');
+            room.send('/tour rules Not Fully Evolved, -Abra, -Diglett, -Dragonair, -Golbat, -Haunter, -Metang, -Vigoroth, -Deepseatooth, -Light Ball');
         },
         // OMs
         natdex: function(room, user, args) {
@@ -102,8 +102,8 @@ module.exports = {
         },
         aaa: function(room, user, args) {
             if (!canMakeTour(room, user)) return;
-            checkGenerator(room, 'gen7almostanyability', args, '[Gen 7] Almost Any Ability NFE');
-            room.send('/tour rules Not Fully Evolved, -Chansey, -Gurdurr, -Piloswine, -Rhydon, -Scyther, -Sneasel, -Electabuzz');
+            checkGenerator(room, 'gen8almostanyability', args, '[Gen 8] Almost Any Ability NFE');
+            room.send('/tour rules Not Fully Evolved, -Chansey, -Gurdurr, -Rhydon, -Scyther, -Type: Null');
         },
         ubers: function(room, user, args) {
             if (!canMakeTour(room, user)) return;
@@ -112,7 +112,7 @@ module.exports = {
         },
         bh: function(room, user, args) {
             if (!canMakeTour(room, user)) return;
-            checkGenerator(room, 'gen8balancedhackmons', args, '[Gen 7] BH NFE');
+            checkGenerator(room, 'gen8balancedhackmons', args, '[Gen 8] BH NFE');
             room.send('/tour rules Not Fully Evolved, -Chansey, -Porygon 2, -Type: Null, -Shell Smash');
         },
         cap: function(room, user, args) {
@@ -127,15 +127,15 @@ module.exports = {
         },
         mnm: function(room, user, args) {
             if (!canMakeTour(room, user)) return;
-            checkGenerator(room, 'gen7mixandmega', args, '[Gen 7] Mix and Mega NFE');
-            room.send('/tour rules Not Fully Evolved, -Gurdurr, -Piloswine');
-            room.send('/wall The following pokemon are not allowed to mega-evolve, if your opponent uses them tell a staff member so they can be disqualified: Chansey, Rhydon, Scyther and Gligar');
+            checkGenerator(room, 'gen8mixandmega', args, '[Gen 8] Mix and Mega NFE');
+            room.send('/tour rules Not Fully Evolved');
+            room.send('/wall The following pokemon are not allowed to mega-evolve, if your opponent uses them tell a staff member so they can be disqualified: Chansey, Doublade, Gurdurr, Haunter, Ivysaur, Magneton, Mr. Mime-Galar, Pawniard, Porygon2, Rhydon, Rufflet, Scyther, Sneasel and Type: Null');
         },
         stab: 'stabmons',
         stabmons: function(room, user, args) {
             if (!canMakeTour(room, user)) return;
-            checkGenerator(room, 'gen7stabmons', args, '[Gen 7] STABmons NFE');
-            room.send("/tour rules Not Fully Evolved, -Chansey, -Haunter, -Yanma, -Dewpider, -King's Rock, -Razor Fang");
+            checkGenerator(room, 'gen8stabmons', args, '[Gen 8] STABmons NFE');
+            room.send("/tour rules Not Fully Evolved, -Chansey, -Haunter, -Dewpider, -King's Rock, -Razor Fang");
         },
         // other
         blitz: function(room, user, args) {
